@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+ <main>
+   <h1 id="title">Survey Form</h1>
+   <p id ="description">
+     Thank you for taking your time to help improve this webpage
+   </p>
+   <form id = "survey-form">
+     <div class="group">
+       <label id="name-label" for ="name">Name
+       </label>
+       <input type = "text" name ="name" id ="name" placeholder="Please enter your name" required>
+     </div>
+     <div class="group">
+       <label id="email-label" for ="email">Email
+       </label>
+       <input type = "email" name ="email" id ="email" placeholder="Please enter your email" required>
+     </div>
+     <div class="group">
+       <label id="number-label" for ="number">Age
+       </label>
+       <input type = "number" name ="age" id ="number" min="5" max ="99" placeholder="Age" required>
+     </div>
+     <div class="group">
+       <p>
+         Current employment status
+       </p>
+       <select id="dropdown" name="role" required>
+         <option value ="student">Student </option>
+         <option value="part-timer">Part  time employment </option>
+         <option value ="full-timer">Full time employment </option>
+         <option value ="other">Other </option>
+       <option value ="nopreference">Prefer not to say </option>
+       </select>
+         </div>
+  <br>
+  <div class="group">
+    <p>Are you Web Developer?</p>
+         <label>
+           <input name="Yesno" value="Yes" type = "radio" checked> Yes
+         </label>
+         <label>
+           <input name="Yesno" value="No" type = "radio"> No
+         </label>
+         <label>
+           <input name="Yesno" value="Preferno" type = "radio"> Prefer not to say
+         </label>
+         <label>
+           <input name="Yesno" value="what" type = "radio"> What is Web Developer?
+         </label>
+       </div>
+     <div class="group">
+       <p>What programming languages do you know?
+       <span class="clue">(Check all that apply)</span>
+       </p>
+       <label>
+         <input name="study" value="c++" type = "checkbox">C++
+       </label>
+       <label>
+         <input name="study" value="java" type = "checkbox">Java
+       </label>
+       <label>
+         <input name="study" value="python" type = "checkbox">Python
+       </label>
+       <label>
+         <input name="study" value="swift" type = "checkbox">Swift
+       </label>
+       <label>
+         <input name="study" value="javascript" type = "checkbox">Javascript
+       </label>
+       <label>
+         <input name="study" value="ruby" type = "checkbox">Ruby
+       </label>
+       <label>
+         <input name="study" value="other" type = "checkbox">Other
+       </label>
+     </div>
+       <div class ="group">
+         <p>Comment and Suggestion</p>
+         <textarea id="comments" name="comment" placeholder="Enter your comment here...">
+         </textarea>
+
+     </div>
+     <div class=group>
+       <button type="submit" id ="submit" > Submit
+       </button>
+     </div>
+   </form>
+ </main>
+
+</body>
+</html>
